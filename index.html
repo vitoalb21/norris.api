@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="">
+<title>API.ChuckNorris.lapiovr</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style>
+    /* Stili per il body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Stili per l'header */
+    header {
+      background-color: black;
+      color: red;
+      padding: 20px;
+      text-align: left;
+    }
+    
+    /* Stili per il titolo all'interno dell'header */
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  </style>
+
+  <div class="riquadro-personalizzato">
+    <p>Benvenuti nel sito web creato per generare battute casuali su chuck norris,
+       questo sito tramite un bottone premuto fa richiesta ad un API. L'api è basato su chuck ed e open source, 
+       tutti i diritti dell'api li troverete giù nella descrizione insieme al nome del creatore di questo sito web.</p>
+  </div>
+
+  <img src="immagini/chucknorris2.png" alt="" class="immagine">
+
+  <div class="riquadro-personalizzato2">
+    <p>Sito API open source: <a href="https://api.chucknorris.io/">link api</a>
+       <div>Creatore del sito web: lapiovr.</div>
+            nome vero: vito alb****
+    </p>
+  </div>
+
+  <div class="container">
+    <button id="btnJoke">Ottieni una barzelletta</button>
+    <p id="jokeText"></p>
+  </div>
+
+  <script>
+    document.getElementById("btnJoke").addEventListener("click", function() {
+        fetch("https://api.chucknorris.io/jokes/random")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("jokeText").innerText = data.value;
+            })
+            .catch(error => {
+                console.error('Errore durante il recupero della barzelletta:', error);
+            });
+    });
+  </script>
+
+</head>
+<body>
+
+<header>
+  <h1>Le migliori battute su Chuck Norris</h1>
+</header>
+
+<!-- Altri contenuti del tuo sito web qui -->
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Stili per il riquadro */
+.riquadro-personalizzato {
+    background-color: black; /* Sfondo interno nero */
+    color: red; /* Testo rosso */
+    padding: 20px;
+    width: 300px; /* Larghezza del riquadro */
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    border: 2px solid red; /* Bordo rosso */
+    border-radius: 10px; /* Angoli arrotondati */
+    margin: left; /* Centra il riquadro a sinistra */
+    text-align: left; /* Allinea il testo a sinistra */
+  }
+  
+  /* Stili per il testo all'interno del riquadro */
+.riquadro-personalizzato p {
+    margin: 0;
+  }
+
+/* Stili per l'immagine */
+.immagine{
+    position: absolute; /* Posizione assoluta rispetto al documento HTML */
+    top: 38%; /* Sposta l'immagine dell'altezza della pagina */
+    left: 35%; /* Sposta l'immagine della larghezza della pagina */
+    transform: translate(-50%, -50%); /* Centra l'immagine esattamente */
+    width: 300px; /* Larghezza dell'immagine */
+    height: 433px; /* Altezza */
+    border: 4px solid black; /* Bordo nero */
+    border-radius: 10px; /* Angoli arrotondati */
+  }
+
+/* Stili per il riquadro2 */
+.riquadro-personalizzato2 {
+    background-color: black; /* Sfondo interno nero */
+    color: red; /* Testo rosso */
+    padding: 20px;
+    width: 300px; /* Larghezza del riquadro */
+    height: 100px;
+    position: absolute;
+    top: 68%;
+    border: 2px solid red; /* Bordo rosso */
+    border-radius: 10px; /* Angoli arrotondati */
+    margin: left; /* Centra il riquadro a sinistra */
+    text-align: left; /* Allinea il testo a sinistra */
+  }
+  
+/* Stili per il testo all'interno del riquadro2 */
+.riquadro-personalizzato p {
+    margin: 0;
+  }
+
+.container {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border: 2px solid red;
+    padding: 20px;
+    position:absolute;
+    top: 10%;
+    right: 30%;
+    border-radius: 10px; /* Angoli arrotondati */
+  }
+
+#btnJoke {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    position:absolute;
+    top: 80%;
+    right: 25%;
+  }
+
+#btnJoke:hover {
+    background-color: #45a049;
+  }
+
+#jokeText {
+    color: white; /* Imposta il colore del testo in bianco */
+  }
